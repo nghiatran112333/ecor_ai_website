@@ -12,6 +12,8 @@ import couponRoutes from "./src/routes/couponRoutes.js";
 import paymentRoutes from "./src/routes/paymentRoute.js";
 import orderRoutes from "./src/routes/orderRoutes.js";
 import reviewRoutes from "./src/routes/reviewRoutes.js";
+import behaviorRoutes from "./src/routes/behaviorRoutes.js";
+import recommendationRoutes from "./src/routes/recommendationRoutes.js";
 import "./src/models/userModel.js";
 import "./src/models/productModel.js";
 import "./src/models/categoryModel.js";
@@ -43,6 +45,8 @@ app.use("/api/v1/coupon", couponRoutes);
 app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/orders", orderRoutes);
 app.use("/api/v1/reviews", reviewRoutes);
+app.use("/api/v1/behaviors", behaviorRoutes);
+app.use("/api/v1/recommendations", recommendationRoutes);
 // http://localhost:8000/api/v1/user/register
 
 connectDB();
